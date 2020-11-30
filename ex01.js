@@ -1,10 +1,10 @@
 // Crie uma função para verificar se um valor é Truthy
 
 function verificarValor(x) {
-    if (x == true) {
-        return true;
+    if (!!x) {
+        return 'É true';
     } else {
-        return false;
+        return 'É false';
     }
 }
 
@@ -24,8 +24,7 @@ console.log(perimetroQuadrado(15, 5, 5, 5));
 // ela deve possuir os parâmetros: nome e sobrenome
 
 function nomeCompleto (nome, sobrenome) {
-    var nomeConcatenado = nome + ' ' + sobrenome;
-    return nomeConcatenado;
+    return nome + ' ' + sobrenome;
 }
 
 console.log('Alex', 'Francisco');
@@ -57,6 +56,7 @@ console.log(tipoDeDado(2));
 // utilize essa função para mostrar no console o seu nome completo
 // quando o evento 'scroll' ocorrer.
 
+addEventListener(scroll, nomeCompleto('Alex', 'F'))
 
 
 // Corrija o erro abaixo
