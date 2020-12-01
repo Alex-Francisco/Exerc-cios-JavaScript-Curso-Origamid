@@ -35,8 +35,16 @@ var carro = {
       raça: 'labrador',
       cor: 'preto',
       idade: '10 anos',
-      late: 'Ao ver um homem',
+      latir(pessoa) {
+        if (pessoa === 'homem') {
+            return 'Latir'
+        } else {
+            return 'Quieto'
+        }
+      }
   }
   
-  console.log(cachorro)
+  console.log(cachorro);
+  console.log(cachorro.latir('mulher'));
+  console.log(cachorro.latir('homem'));
   
