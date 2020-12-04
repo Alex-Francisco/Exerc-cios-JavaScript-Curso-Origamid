@@ -4,7 +4,7 @@
     const marca = 'Fiat';
     let portas = 4;
   }
-  console.log(var, marca, portas); R: Pelo fato de ter usado a palavra-chave var no console.log*/
+  console.log(var, marca, portas); R: Pelo fato de ter usado a palavra-chave var no console.log, ao trocar o mesmo para cor, o erro continua, já que const e let não vaza do escopo de bloco criando com { }*/
 
   
   /* Como corrigir o erro abaixo?
