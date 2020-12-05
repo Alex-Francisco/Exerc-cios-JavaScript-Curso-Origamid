@@ -5,8 +5,8 @@ console.log(url);
 // Seleciona o primeiro elemento da página que
 // possua a classe ativo
 
-let selecionaAtivo = document.querySelector('.ativo');
-console.log(selecionaAtivo)
+let selecionarAtivo = document.querySelector('.ativo');
+console.log(selecionarAtivo)
 
 // Retorne a linguagem do navegador
 console.log(window.navigator.language);
