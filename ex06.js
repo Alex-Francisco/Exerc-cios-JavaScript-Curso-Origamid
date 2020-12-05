@@ -20,7 +20,6 @@ function somarDois(x) {
 
   // Resposta
   const dois = 2;
-
   function somarDois(x) {
     return x + dois;
   }
