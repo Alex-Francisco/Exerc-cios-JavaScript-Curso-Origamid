@@ -9,6 +9,7 @@ let selecionaAtivo = document.querySelector('.ativo');
 console.log(selecionaAtivo)
 
 // Retorne a linguagem do navegador
+console.log(window.navigator.language);
 
 // Retorne a largura da janela 
-console.log(window.innerWidth)
+console.log(window.innerWidth);
