@@ -5,7 +5,10 @@ paragrafos.forEach((paragrafo) => {
 });
 
 // Mostre o texto dos parágrafos no console
-    
+paragrafos.forEach((paragrafo) => {
+    console.log(paragrafo.innerText);
+});
+
 // Como corrigir os erros abaixo:
 const imgs = document.querySelectorAll('img');
 
