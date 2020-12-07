@@ -14,5 +14,6 @@ console.log(document.querySelectorAll('[href^="#"]'));
 console.log(document.querySelector('.animais-descricao h2'));
 
 // Selecione o último p do site
-console.log(document.querySelector('p:last-child'))
+const paragrafo = document.querySelectorAll('p');
+console.log(paragrafo[paragrafo.length-1]);
 
