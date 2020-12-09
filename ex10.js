@@ -37,7 +37,7 @@ links.forEach((link) => {
 const larguraBrowser = window.matchMedia('(max-width: 720px)');
 valorLargura = larguraBrowser.matches;
 if (valorLargura) {
-    document.querySelector('body').classList.add('menu-mobile');
+    document.querySelector('.menu').classList.add('menu-mobile');
 } else {
-    document.querySelector('body').classList.remove('menu-mobile');
+    document.querySelector('.menu').classList.remove('menu-mobile');
 }
