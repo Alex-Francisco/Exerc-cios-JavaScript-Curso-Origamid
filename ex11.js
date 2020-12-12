@@ -22,12 +22,14 @@ linksInternos.forEach((link) => {
 const selecionaElemento = document.querySelectorAll('body *');
 console.log(selecionaElemento);
 
+function handleElemento(event) {
+    console.log(event.currentTarget);
+}
+
 selecionaElemento.forEach((elemento) => {
-    elemento.addEventListener('click', () => {
-        elemento.currentTarget
-    });
+    elemento.addEventListener('click', handleElemento);
 });
-/*
+
 // Utilizando o código anterior, ao invés de mostrar no console,
 // remova o elemento que está sendo clicado, o método remove() remove um elemento
 const selecionaElementos = document.querySelectorAll('body *');
@@ -38,7 +40,7 @@ selecionaElementos.forEach((elemento) => {
         elemento.remove()
     });
 });
-*/
+
 
 // Se o usuário clicar na tecla (t), aumente todo o texto do site. 
 window.addEventListener('keydown', (pressionado) => {
