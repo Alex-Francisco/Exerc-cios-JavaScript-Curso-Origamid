@@ -3,8 +3,14 @@
 // demais itens caso eles possuam a mesma. Previna
 // o comportamento padrão desses links
 
-const links = document.querySelectorAll('a');
-console.log(links)
+const linksInternos = document.querySelectorAll('a[href^="#"');
+console.log(linksInternos)
+
+linksInternos.forEach((linkInterno) => {
+    linkInterno.addEventListener('click', () => {
+        linkInterno.classList.toggle('ativo')
+    });
+});
 
 
 // Selecione todos os elementos do site começando a partir do body,
