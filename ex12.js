@@ -8,6 +8,20 @@ copy.appendChild(cloneMenu);
 
 // Selecione o primeiro DT da dl de Faq
 
+const faqLista = document.querySelector('.faq');
+const primeiroDt = faqLista.querySelector('dt');
+
+console.log(primeiroDt);
+
+
 // Selecione o DD referente ao primeiro DT
 
+const proxDd = primeiroDt.nextElementSibling;
+console.log(proxDd);
+
 // Substitua o conteúdo html de .faq pelo de .animais
+
+const faq = document.querySelector('.faq');
+const animais = document.querySelector('.animais');
+
+faq.innerHTML = animais.innerHTML; 
