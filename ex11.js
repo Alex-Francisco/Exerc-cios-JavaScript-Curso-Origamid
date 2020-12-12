@@ -46,7 +46,7 @@ selecionaElementos.forEach((elemento) => {
 window.addEventListener('keydown', (pressionado) => {
     if (pressionado.key === 't') {
         const body = document.querySelector('body');
-        body.classList.add('txtMaior') 
+        body.classList.toggle('txtMaior') 
     }
 }); 
 
