@@ -8,6 +8,7 @@ console.log(linksInternos);
 
 linksInternos.forEach((linkInterno) => {
     linkInterno.addEventListener('click', () => {
+        linkInterno.preventDefault()
         linkInterno.classList.toggle('ativo')
     });
 });
@@ -15,6 +16,17 @@ linksInternos.forEach((linkInterno) => {
 
 // Selecione todos os elementos do site começando a partir do body,
 // ao clique mostre exatamente quais elementos estão sendo clicados
+const selecionaElemento = document.querySelectorAll('body *');
+console.log(selecionaElemento);
+
+selecionaElemento.forEach((elemento) => {
+    elemento.addEventListener('click', () => {
+        elemento.currentTarget
+    });
+});
+
+// Utilizando o código anterior, ao invés de mostrar no console,
+// remova o elemento que está sendo clicado, o método remove() remove um elemento
 const selecionaElementos = document.querySelectorAll('body *');
 console.log(selecionaElementos);
 
@@ -24,8 +36,13 @@ selecionaElementos.forEach((elemento) => {
     });
 });
 
-// Utilizando o código anterior, ao invés de mostrar no console,
-// remova o elemento que está sendo clicado, o método remove() remove um elemento
-
 
 // Se o usuário clicar na tecla (t), aumente todo o texto do site. 
+window.addEventListener('keydown', (pressionado) => {
+    if (pressionado.key === 't') {
+        const body = document.querySelector('body');
+        body.classList.add('txtMaior') 
+    }
+}); 
+
+
