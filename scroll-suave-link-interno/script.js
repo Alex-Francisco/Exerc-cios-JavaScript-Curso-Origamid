@@ -45,3 +45,5 @@ function initAccordion() {
 }
 
 initAccordion();
+
+const linksInternos = document.querySelectorAll('.js-menu a[')
