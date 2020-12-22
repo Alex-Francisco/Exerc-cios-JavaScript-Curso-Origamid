@@ -21,5 +21,12 @@ console.log(preco.toLocaleString('en-US', { style: 'currency', currency: 'USD'})
 console.log(preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'}));
 
 
+console.log(Math.PI);
+console.log(Math.abs(-5)); // retorna 5 positivo
+console.log(Math.ceil(3.4)); // arredonda pra cima, no caso 4 (ceil = teto)
+console.log(Math.floor(3.4)); // arredonda pra baixo, no caso 3 (floor = chão)
+
+
+
 
 
