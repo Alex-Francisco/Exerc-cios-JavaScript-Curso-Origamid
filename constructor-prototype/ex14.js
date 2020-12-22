@@ -52,4 +52,4 @@ console.log(li.click().constructor.name);
 
 
 // Qual o construtor do dado abaixo:
-li.hidden.constructor.name;
+li.hidden.constructor.name; // String
