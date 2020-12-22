@@ -25,6 +25,10 @@ console.log(Math.PI);
 console.log(Math.abs(-5)); // retorna 5 positivo
 console.log(Math.ceil(3.4)); // arredonda pra cima, no caso 4 (ceil = teto)
 console.log(Math.floor(3.4)); // arredonda pra baixo, no caso 3 (floor = chão)
+console.log(Math.round(4.7)); // arredondamento automático
+console.log(Math.round(4.3)); // arredondamento automático
+
+
 
 
 
