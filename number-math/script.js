@@ -11,6 +11,7 @@ console.log(parseFloat('200 reais'));
 console.log(parseInt('23.78'));
 
 
-const 
+const preco = 2.99;
+preco.toFixed();
 
 
