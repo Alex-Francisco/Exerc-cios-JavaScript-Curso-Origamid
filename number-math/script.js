@@ -12,6 +12,12 @@ console.log(parseInt('23.78'));
 
 
 const preco = 2.99;
-preco.toFixed();
+console.log(preco.toFixed());
+console.log(preco.toFixed(4));
+console.log(preco.toFixed() + 2); // errado
+console.log(+preco.toFixed() + 2); // certo
+
+
+
 
 
