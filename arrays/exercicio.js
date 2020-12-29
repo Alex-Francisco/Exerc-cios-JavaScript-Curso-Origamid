@@ -17,7 +17,11 @@ console.log(comidas);
 
 const estudantes = ['Marcio', 'Brenda', 'Joana', 'Kleber', 'Julia'];
 // Arrume os estudantes em ordem alfabética
+estudantes.sort();
+console.log(estudantes);
 // Inverta a ordem dos estudantes
+estudantes.reverse();
+console.log(estudantes);
 // Verifique se Joana faz parte dos estudantes
 // Verifique se Juliana faz parte dos estudantes
 
