@@ -12,6 +12,8 @@ console.log(ultimoValor);
 comidas.push('Arroz');
 console.log(comidas);
 // Adicione 'Peixe' e 'Batata' ao início da array
+comidas.unshift('Peixe', 'Batata');
+console.log(comidas);
 
 const estudantes = ['Marcio', 'Brenda', 'Joana', 'Kleber', 'Julia'];
 // Arrume os estudantes em ordem alfabética
