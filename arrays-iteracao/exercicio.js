@@ -59,6 +59,7 @@ const compras = [
   }
 ]
 
+/*
 let total = 0;
 const newCompra = compras.map(function(item, index, array){
     precoCorrigido = item.preco.replace('R$ ', '').replace(',', '.');
@@ -66,5 +67,12 @@ const newCompra = compras.map(function(item, index, array){
 });
 
 console.log(`O valor total de compras foi de R$ ${total}`);
+*/
 
+const total = compras.reduce((acumulador, item) => {
+    const precoCorrigido = +item.preco.replace('R$ ', '').replace(',', '.');
+    return acumulador + precoCorrigido;
+}, 0)
+
+console.log(`O valor total de compras foi de R$ ${total}`);
 
