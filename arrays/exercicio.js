@@ -35,6 +35,12 @@ if (estudantes.includes('Joana')) {
     console.log('O nome Joana não está na lista');
 }
 
+// Verifique se Juliana faz parte dos estudantes
+if (estudantes.includes('Juliana')) {
+    console.log('O nome Juliana está na lista');
+} else {
+    console.log('O nome Juliana não está na lista');
+}
 
 let html = `<section>
               <div>Sobre</div>
@@ -55,3 +61,7 @@ console.log(htmlString);
 const carros = ['Ford', 'Fiat', 'VW', 'Honda'];
 // Remova o último carro, mas antes de remover
 // salve a array original em outra variável
+const originalCarros = carros.slice();
+carros.pop();
+console.log(originalCarros);
+console.log(carros);
