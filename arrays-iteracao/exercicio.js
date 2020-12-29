@@ -28,6 +28,11 @@ console.log(maiorQue100);
 // Verifique se Baixo faz parte
 // da lista de instrumentos e retorne true
 const instrumentos = ['Guitarra', 'Baixo', 'Bateria', 'Teclado']
+const buscaBaixo = instrumentos.some((instrumento) => {
+    return instrumento === 'Baixo';
+});
+
+console.log(buscaBaixo);
 
 
 // Retorne o valor total das compras
@@ -53,4 +58,13 @@ const compras = [
     preco: 'R$ 10,60'
   }
 ]
+
+let total = 0;
+const newCompra = compras.map(function(item, index, array){
+    precoCorrigido = item.preco.replace('R$ ', '').replace(',', '.');
+    total += +precoCorrigido;
+});
+
+console.log(`O valor total de compras foi de R$ ${total}`);
+
 
