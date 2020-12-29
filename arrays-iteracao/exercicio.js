@@ -8,10 +8,12 @@ const newCurso = arrayCurso.map((curso) => {
     const titulo = curso.querySelector('h1').innerText;
     const descricao = curso.querySelector('p').innerText;
     const aulas = curso.querySelector('.aulas').innerText;
+    const horas = curso.querySelector('.horas').innerText;
     return {
         Título: titulo,
         Descrição: descricao,
-        Aulas: aulas,               
+        Aulas: aulas,
+        Horas: horas,               
     }
 });
 console.log(newCurso);
