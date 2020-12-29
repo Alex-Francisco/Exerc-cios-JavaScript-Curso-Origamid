@@ -2,6 +2,19 @@
 // com objetos contendo o título, descricao,
 // aulas e horas de cada curso
 
+const selecionaCurso = document.querySelectorAll('.curso');
+const arrayCurso = Array.from(selecionaCurso);
+const newCurso = arrayCurso.map((curso) => {
+    const titulo = curso.querySelector('h1').innerText;
+    const descricao = curso.querySelector('p').innerText;
+    const aulas = curso.querySelector('.aulas').innerText;
+    return {
+        Título: titulo,
+        Descrição: descricao,
+        Aulas: aulas,               
+    }
+});
+console.log(newCurso);
 
 // Retorne uma lista com os
 // números maiores que 100
