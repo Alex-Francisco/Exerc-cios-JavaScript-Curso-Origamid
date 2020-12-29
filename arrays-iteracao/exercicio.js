@@ -21,6 +21,8 @@ console.log(newCurso);
 // Retorne uma lista com os
 // números maiores que 100
 const numeros = [3, 44, 333, 23, 122, 322, 33];
+const maiorQue100 = numeros.filter((x => x > 100));
+console.log(maiorQue100);
 
 
 // Verifique se Baixo faz parte
