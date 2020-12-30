@@ -54,7 +54,7 @@ const compras = [
     preco: 'R$ 5,35'
   },
   {
-    item: 'Quejo',
+    item: 'Queijo',
     preco: 'R$ 10,60'
   }
 ]
