@@ -17,6 +17,7 @@ cep.then(r => r.json())
     conteudo.innerText = body.localidade;
 });*/
 
+/*
 const estilo = fetch('./style.css');
 
 estilo.then(r => r.text())
@@ -25,4 +26,4 @@ estilo.then(r => r.text())
     const criarElemento = document.createElement('style');
     criarElemento.innerHTML = body;
     conteudo.appendChild(criarElemento)
-});
+});*/
