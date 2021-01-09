@@ -12,7 +12,7 @@ Button.prototype.element = function() {
 };
 */
 
-
+/*
 class Button {
     constructor(text, background) {
         this.text = text;
@@ -28,3 +28,30 @@ class Button {
 
 const blueButton = new Button('Comprar', 'blue');
 console.log(blueButton.element())
+*/
+
+/*
+class Button {
+    constructor(text, background, color) {
+        this.text = text;
+        this.background = background;
+        this.color = color;
+    }
+    element () {
+        const buttonElement = document.createElement('button');
+        buttonElement.innerText = this.text;
+        buttonElement.style.background = this.background;
+        buttonElement.style.color = this.color;
+        return buttonElement;
+    }
+    appendTo(target) {
+        const targetElement = document.querySelector(target);
+        targetElement.appendChild(this.element());
+        return targetElement;
+    }
+}
+
+const blueButton = new Button ('Comprar', 'blue', 'white');
+console.log(blueButton.appendTo('body'));
+*/
+
