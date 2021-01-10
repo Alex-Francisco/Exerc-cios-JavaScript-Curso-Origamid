@@ -55,3 +55,26 @@ const blueButton = new Button ('Comprar', 'blue', 'white');
 console.log(blueButton.appendTo('body'));
 */
 
+class Button {
+    constructor(options) {
+        this.options = options;
+    }
+    static createButton(text, background) {
+        const buttonElement = document.createElement('button');
+        buttonElement.innerText = text;
+        buttonElement.style.background = background;
+        return buttonElement;
+    }
+}
+
+const optionsBlue = {
+    backgroundColor: 'blue',
+    text: 'Comprar',
+    color: 'white',
+}
+
+
+const blueButton = new Button(optionsBlue);
+
+const blueButtonStatic = Button.createButton('Clique', 'blue');
+console.log(blueButtonStatic);
