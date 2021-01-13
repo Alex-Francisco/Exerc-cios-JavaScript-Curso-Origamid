@@ -23,4 +23,8 @@
   // Utilize o método push para inserir as frutas ao final de comidas.
   const frutas2 = ['Banana', 'Uva', 'Morango'];
   const comidas2 = ['Pizza', 'Batata'];
+
+  comidas2.push(...frutas2);
+  console.log(comidas2);
+
   
