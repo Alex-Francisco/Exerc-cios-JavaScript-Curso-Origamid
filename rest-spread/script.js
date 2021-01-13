@@ -40,3 +40,29 @@ function mult(a = 0, b = 0) {
 }
 
 console.log(mult(10, 40));
+
+function sub(a = 0, b = 0) {
+    const argArray = Array.from(arguments);
+    argArray.forEach(arg => {
+        console.log(arg);
+    })
+    console.log(argArray);
+    return a * b;
+}
+
+console.log(sub(10, 40));
+
+
+function teste(...listaArgumentos) {
+    console.log(listaArgumentos);
+    listaArgumentos.forEach(item => console.log(item));
+}
+
+teste(10, 20, 30, 'Oi', 'Teste')
+
+function dividir(a, b, ...listaArgumentos) {
+    console.log(listaArgumentos);
+    return a / b
+}
+
+console.log(dividir(100, 20, 30, 'Oi', 'Teste'));
