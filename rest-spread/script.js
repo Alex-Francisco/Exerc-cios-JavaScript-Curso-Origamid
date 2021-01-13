@@ -66,3 +66,17 @@ function dividir(a, b, ...listaArgumentos) {
 }
 
 console.log(dividir(100, 20, 30, 'Oi', 'Teste'));
+
+
+// Spread
+
+
+const frutas = ['Banana', 'Uva', 'Morango'];
+const legumes = ['Cenoura', 'Batata'];
+
+const comidas = [...frutas, 'Pizza', ...legumes];
+console.log(comidas);
+
+const todosOsNumeros = [3, 4, 5, 12, 3, 24, 2, 33];
+const numeroMaximo = Math.max(...todosOsNumeros);
+console.log(numeroMaximo);
