@@ -21,8 +21,23 @@
             font-size: 1em;
             box-sizing: border-box;
         }
+        input.valido {
+            border-color: green;
+        }
+        input.erro {
+            border-color: red;
+        }
         input::placeholder {
             color: rgba(0, 0, 0, .2);
+        }
+        .erro-text {
+            display: none;
+            font-family: 'IBM Plex Mono';
+            font-size: .875rem;
+            color: red;
+        }
+        .erro-text.ativar {
+            display: block;
         }
     </style>
     <form action="">
@@ -31,7 +46,6 @@
         <label for="email">Email</label>
         <input type="text" name="email" id="email">
     </form>
-    <script src="script1.js"></script>
-    <script src="validar.js"></script>
+    <script type="module" src="script1.js"></script>
 </body>
 </html>
